@@ -7,6 +7,19 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("load", () => {
+      setIsLoaded(true);
+    });
+
+    return () => {
+      window.removeEventListener("load", () => {
+        setIsLoaded(true);
+      });
+    };
+  }, []);
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
@@ -32,7 +45,7 @@ export default function Home() {
     visibleBottom: { opacity: 1, transition: { duration: 1, delay: 0.6 } },
   };
   return (
-    <>
+    <div style={{ visibility: isLoaded ? "visible" : "hidden" }}>
       <Header />
       <div className="flex gap-20 mt-20 overflow-hidden">
         <div className="w-full">
@@ -119,6 +132,6 @@ export default function Home() {
         </div>
         <div ref={ref} className="absolute bottom-0 left-0 w-full h-[200px]" />
       </div>
-    </>
+    </div>
   );
 }
