@@ -11,19 +11,11 @@ const LINK_DATA = [
   },
   {
     text: "Виды камер",
-    link: "/",
+    link: "/vidi",
   },
   {
     text: "Тарифы",
-    link: "/",
-  },
-  {
-    text: "Спец предложения",
-    link: "/",
-  },
-  {
-    text: "Контакты",
-    link: "/",
+    link: "/tarifi",
   },
 ];
 
@@ -40,7 +32,7 @@ const Header: React.FC<Props> = ({}) => {
         </div>
         <a href="tel:89174734126">свзяь с директором: 89174734126</a>
       </div>
-      <header className="sticky top-0 left-0 bg-gray-200 w-full py-4 flex justify-center gap-8">
+      <header className="sticky top-0 left-0 bg-gray-200 w-full py-4 flex justify-center gap-8 z-10">
         {LINK_DATA.map((item, i) => (
           <a key={i} href={item.link} className="font-medium text-black">
             {item.text}
