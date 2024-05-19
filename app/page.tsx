@@ -81,14 +81,6 @@ export default function Home() {
               Бесплатная установка при покупке камеры
             </motion.li>
           </ul>
-          <motion.button
-            initial={{ x: "-100vw" }}
-            animate={{ x: 0 }}
-            transition={{ delay: 1.5, duration: 0.1 }}
-            className="max-w-[250px] ml-auto block mt-5"
-          >
-            Подключить
-          </motion.button>
         </div>
         <motion.div
           className="h-[500px]"
@@ -106,7 +98,7 @@ export default function Home() {
             variants={animationVariants}
             className="text-6xl text-white"
           >
-            Безопастность
+            Безопасность
           </motion.h1>
           <motion.h1
             initial="hiddenBottom"

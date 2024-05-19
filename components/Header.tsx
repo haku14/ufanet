@@ -27,10 +27,10 @@ const Header: React.FC<Props> = ({}) => {
           <Image src={LogoIcons} alt="logo" />
         </div>
         <div className="flex items-center gap-4">
-          <p>вас снимает скрытая камера</p>
+          <p>Лучшие камеры</p>
           <Image width={30} height={30} src={CameraIcons} alt="camera" />
         </div>
-        <a href="tel:89174734126">свзяь с директором: 89174734126</a>
+        <a href="tel:89174734126">контакт для связи: 89174734126</a>
       </div>
       <header className="sticky top-0 left-0 bg-gray-200 w-full py-4 flex justify-center gap-8 z-10">
         {LINK_DATA.map((item, i) => (

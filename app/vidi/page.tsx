@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Image from "next/image";
 
 export default function Vidi() {
   return (
@@ -8,54 +9,81 @@ export default function Vidi() {
         <h2 className="text-3xl font-bold text-center mb-8 mt-10">
           Виды камер
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
           <div className="bg-white rounded-lg shadow-md p-6">
-            <h3 className="text-xl font-semibold mb-2">Камера 1</h3>
-            <p className="text-gray-600">
-              Камера с высоким разрешением обеспечивает четкое и
-              детализированное изображение, идеально подходящее для
-              видеонаблюдения в условиях низкой освещенности. Эта камера
-              оснащена 4K-съемкой, что позволяет увидеть каждую деталь в вашем
-              видеонаблюдении. Благодаря встроенному датчику движения, камера
-              автоматически активируется при обнаружении движения, обеспечивая
-              безопасность и уверенность в вашем видеонаблюдении.
+            <h3 className="text-xl font-semibold mb-2">Внутренняя</h3>
+            <Image
+              src={"https://www.ufanet.ru/media/uploads/2022/03/29/inside.png"}
+              alt="er"
+              width={500}
+              height={300}
+            />
+            <p className="text-gray-600 mt-3">
+              Благодаря встроенному микрофону может записывать видео со звуком.
             </p>
+            <div className="flex gap-4 items-center mt-3">
+              <div>
+                <p className="font-bold text-2xl">4 400 ₽</p>
+                <p className="text-gray-600 text-sm">Камера</p>
+              </div>
+              <p className="font-bold text-2xl">+</p>
+              <div>
+                <p className="font-bold text-2xl">1 500 ₽</p>
+                <p className="text-gray-600 text-sm">Инжектор PoE</p>
+              </div>
+            </div>
           </div>
           <div className="bg-white rounded-lg shadow-md p-6">
-            <h3 className="text-xl font-semibold mb-2">Камера 2</h3>
-            <p className="text-gray-600">
-              Камера с широким углом обзора идеально подходит для обеспечения
-              видеонаблюдения в больших помещениях или на открытых
-              пространствах. Она обеспечивает широкий обзор, позволяя вам видеть
-              большую площадь с одного кадра. Эта камера также оснащена функцией
-              ночного видения, что делает ее идеальным выбором для
-              видеонаблюдения в условиях плохого освещения.
+            <h3 className="text-xl font-semibold mb-2">Антивандальная</h3>
+            <Image
+              src={
+                "https://www.ufanet.ru/media/uploads/2022/03/29/antivandal_9Aga6wC.png"
+              }
+              alt="er"
+              width={500}
+              height={300}
+            />
+            <p className="text-gray-600 mt-3">
+              Надежно защищена от пыли и влаги. Оптимальный вариант для
+              широкоугольного обзора на ближнем расстоянии.
             </p>
+            <div className="flex gap-4 items-center mt-3">
+              <div>
+                <p className="font-bold text-2xl">4 400 ₽</p>
+                <p className="text-gray-600 text-sm">Камера</p>
+              </div>
+              <p className="font-bold text-2xl">+</p>
+              <div>
+                <p className="font-bold text-2xl">1 500 ₽</p>
+                <p className="text-gray-600 text-sm">Инжектор PoE</p>
+              </div>
+            </div>
           </div>
           <div className="bg-white rounded-lg shadow-md p-6">
-            <h3 className="text-xl font-semibold mb-2">Камера 3</h3>
-            <p className="text-gray-600">
-              Камера с инфракрасным освещением идеально подходит для
-              видеонаблюдения в условиях низкой освещенности или в темноте.
-              Благодаря использованию инфракрасного света, камера обеспечивает
-              четкое изображение даже при отсутствии естественного света. Эта
-              камера также оснащена функцией автоматического активирования при
-              обнаружении движения, что обеспечивает безопасность и уверенность
-              в вашем видеонаблюдении.
+            <h3 className="text-xl font-semibold mb-2">Внешняя</h3>
+            <Image
+              src={
+                "https://www.ufanet.ru/media/uploads/2022/03/29/vario_Hiot8hQ.png"
+              }
+              alt="er"
+              width={500}
+              height={300}
+            />
+            <p className="text-gray-600 mt-3">
+              Надежно защищена от пыли и влаги. Оптимальный вариант для обзора
+              на среднем и дальнем расстоянии.
             </p>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h3 className="text-xl font-semibold mb-2">Камера 4</h3>
-            <p className="text-gray-600">
-              Камера с функцией записи позволяет вам не только видеть, но и
-              записывать видео в случае необходимости. Эта камера оснащена
-              высококачественным датчиком, который обеспечивает четкое и
-              детализированное изображение. Функция записи позволяет сохранять
-              видео в течение определенного времени, что может быть полезно для
-              анализа событий или для обеспечения безопасности. Камера также
-              оснащена датчиком движения, который автоматически активирует
-              запись при обнаружении движения.
-            </p>
+            <div className="flex gap-4 items-center mt-3">
+              <div>
+                <p className="font-bold text-2xl">4 400 ₽</p>
+                <p className="text-gray-600 text-sm">Камера</p>
+              </div>
+              <p className="font-bold text-2xl">+</p>
+              <div>
+                <p className="font-bold text-2xl">1 500 ₽</p>
+                <p className="text-gray-600 text-sm">Инжектор PoE</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
