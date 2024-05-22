@@ -111,6 +111,64 @@ export default function Home() {
         </div>
         <div ref={ref} className="absolute bottom-0 left-0 w-full h-[200px]" />
       </div>
+      <div className="max-w-[1200px] px-4 pt-[200px] mx-auto">
+        <div className="flex justify-between items-center">
+          <Image
+            width={500}
+            height={400}
+            src={
+              "https://www.ufanet.ru/media/core/img/blocks/image.psd_-_2023-06-19T162740.280.png"
+            }
+            alt="qwe"
+          />
+          <div>
+            <h1>Просмотр камер со смартфона</h1>
+            <p className="mt-5">
+              Установите приложение «Мой умный дом» на смартфон или планшет и
+              наблюдайте за тем, что важно и ценно, из любой точки мира, где
+              есть интернет. Наши камеры записывают звук и отмечают моменты
+              движения в кадре на временной шкале архива.
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-between items-center mt-20">
+          <Image
+            width={500}
+            height={400}
+            src={
+              "https://www.ufanet.ru/media/core/img/blocks/image.psd_-_2023-06-19T155816.517.png"
+            }
+            alt="qwe"
+          />
+          <div>
+            <h1>Все камеры в одном приложении!</h1>
+            <p className="mt-5">
+              Если у вас установлено несколько камер в разных местах (дом, дача,
+              подъезд и др.), их все можно добавить на одну вкладку в мобильном
+              приложении «Мой умный дом», А еще для пользователей приложения
+              доступны бесплатные городские камеры на улицах и перекрестках
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-between items-center mt-20">
+          <Image
+            width={500}
+            height={400}
+            src={
+              "https://www.ufanet.ru/media/core/img/blocks/image.psd_-_2023-06-19T163324.114.png"
+            }
+            alt="qwe"
+          />
+          <div>
+            <h1>Архив записей в безопасности</h1>
+            <p className="mt-5">
+              Даже если злоумышленники проникли на охраняемую территорию, они не
+              смогут похитить или уничтожить записи, ведь они хранятся на
+              защищенном облачном сервере.
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

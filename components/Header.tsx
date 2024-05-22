@@ -6,8 +6,12 @@ interface Props {}
 
 const LINK_DATA = [
   {
-    text: "О нас",
+    text: "Главная",
     link: "/",
+  },
+  {
+    text: "О нас",
+    link: "/team",
   },
   {
     text: "Виды камер",
