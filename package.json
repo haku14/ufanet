@@ -12,7 +12,9 @@
     "framer-motion": "^10.16.16",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.3.0",
+    "tw-merge": "^0.0.1-alpha.3"
   },
   "devDependencies": {
     "@types/node": "^20",

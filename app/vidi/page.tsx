@@ -1,7 +1,12 @@
+"use client";
+
 import Header from "@/components/Header";
 import Image from "next/image";
+import { useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 export default function Vidi() {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <Header />
@@ -84,6 +89,52 @@ export default function Vidi() {
                 <p className="text-gray-600 text-sm">Инжектор PoE</p>
               </div>
             </div>
+          </div>
+        </div>
+        <button
+          onClick={() => setOpen(true)}
+          className="mt-10 max-w-[300px] mx-auto block"
+        >
+          Оставить заявку
+        </button>
+      </div>
+      <div
+        className={twMerge(
+          "fixed z-[100] top-0 left-0 w-screen h-screen flex items-center bg-black bg-opacity-35 justify-center opacity-0 pointer-events-none duration-300",
+          open && "opacity-100 pointer-events-auto"
+        )}
+      >
+        <div className="max-w-[718px] w-full p-4 rounded-[4px] bg-white">
+          <div className="flex justify-between items-center">
+            <p className="text-3xl font-bold">Укажите ваши данные</p>
+          </div>
+          <div className="flex flex-col gap-5 mt-4">
+            <input
+              type="text"
+              placeholder="Имя"
+              className="border border-black py-2 rounded-lg pl-3"
+            />
+            <input
+              type="text"
+              placeholder="Номер телефон"
+              className="border border-black py-2 rounded-lg pl-3"
+            />
+            <input
+              type="text"
+              placeholder="Почта"
+              className="border border-black py-2 rounded-lg pl-3"
+            />
+            <textarea
+              placeholder="Комментарий"
+              className="border border-black py-2 rounded-lg pl-3"
+            ></textarea>
+            <button
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              Оставить заявку
+            </button>
           </div>
         </div>
       </div>
